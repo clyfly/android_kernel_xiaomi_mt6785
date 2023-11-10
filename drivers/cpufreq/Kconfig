@@ -76,6 +76,14 @@ config CPU_FREQ_DEFAULT_GOV_POWERSAVE
 	  the frequency statically to the lowest frequency supported by
 	  the CPU.
 
+config CPU_FREQ_DEFAULT_GOV_RAD
+	bool "RAD[NotForDaily]"
+	select CPU_FREQ_GOV_RAD
+	help
+	  Use the CPUFreq governor 'radperf+' as default. This sets
+	  the frequency force to the highest frequency supported by
+	  the CPU and remove some thermal policy for boost your gaming experience.
+
 config CPU_FREQ_DEFAULT_GOV_USERSPACE
 	bool "userspace"
 	select CPU_FREQ_GOV_USERSPACE
