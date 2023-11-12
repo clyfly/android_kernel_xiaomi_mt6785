@@ -313,7 +313,7 @@ static void cs_start(struct cpufreq_policy *policy)
 }
 
 static struct dbs_governor cs_governor = {
-	.gov = CPUFREQ_DBS_GOVERNOR_INITIALIZER("rad[daily]"),
+	.gov = CPUFREQ_DBS_GOVERNOR_INITIALIZER("rad[not4daily]"),
 	.kobj_type = { .default_attrs = cs_attributes },
 	.gov_dbs_update = cs_dbs_update,
 	.alloc = cs_alloc,
