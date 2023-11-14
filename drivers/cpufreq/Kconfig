@@ -136,6 +136,11 @@ config CPU_FREQ_DEFAULT_GOV_SCHEDUTIL
 	  have a look at the help section of that governor. The fallback
 	  governor will be 'performance'.
 
+config CPU_FREQ_DEFAULT_GOV_DARKNESS
+        bool "darkness"
+        select CPU_FREQ_GOV_DARKNESS
+        help	  
+
 endchoice
 
 config CPU_FREQ_GOV_PERFORMANCE
