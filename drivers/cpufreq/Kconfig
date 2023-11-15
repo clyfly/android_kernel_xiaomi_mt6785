@@ -137,9 +137,10 @@ config CPU_FREQ_DEFAULT_GOV_SCHEDUTIL
 	  governor will be 'performance'.
 
 config CPU_FREQ_DEFAULT_GOV_DARKNESS
-        bool "darkness"
-        select CPU_FREQ_GOV_DARKNESS
-        help	  
+	bool "darkness"
+	select CPU_FREQ_GOV_DARKNESS
+	help
+	Use the CPUFreq governor 'darkness' as default.
 
 endchoice
 
